@@ -1,0 +1,24 @@
+# LangChain core
+langchain
+langchain-core
+langchain-community
+
+# LangChain integrations
+langchain-openai
+
+# OpenAI SDK
+openai
+
+# Environment variables
+python-dotenv
+
+# Vector stores / embeddings
+chromadb
+
+# Optional: Hugging Face models
+langchain-huggingface
+sentence-transformers
+
+# Optional: API / web application
+fastapi
+uvicorn

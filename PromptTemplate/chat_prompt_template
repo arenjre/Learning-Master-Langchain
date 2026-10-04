@@ -1,0 +1,21 @@
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+from langchain_core.prompts import ChatPromptTemplate
+from dotenv import load_dotenv
+
+load_dotenv()
+
+llm = HuggingFaceEndpoint(
+    repo_id="google/gemma-4-31B-it",
+    task="text-generation",
+)
+
+model = ChatHuggingFace(llm=llm)
+
+chat_template = ChatPromptTemplate([
+    ("system", "You are a helpful expert in {subject}."),
+    ("human", "Explain in simple term, what is {topic}?"),
+])
+
+chat = chat_template.invoke({"subject":"cricket", "topic":"dusra"})
+result = model.invoke(chat.messages)
+print("Bot:", result.content)

@@ -1,0 +1,12 @@
+[
+  {
+    "role": "human",
+    "content": "I want to request a refund for my order #12345.",
+    "timestamp": "2026-08-18T10:00:00"
+  },
+  {
+    "role": "ai",
+    "content": "Your refund request for order #12345 has been initiated.",
+    "timestamp": "2026-08-18T10:00:05"
+  }
+]
